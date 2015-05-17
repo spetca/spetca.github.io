@@ -1,214 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<style>
+		/*
+---------------------------------------------------------------------------------
+	STRIPPED DOWN RESUME TEMPLATE
+    html resume
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="css/styles.css"/>
-<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css"/>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
-<script type="text/javascript" src="js/jquery.lightbox-0.5.pack.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-<title>Web Resume</title>
+    v0.9: 5/28/09
+
+    design and code by: thingsthatarebrown.com 
+                        (matt brown)
+---------------------------------------------------------------------------------
+*/
+
+
+.msg { padding: 10px; background: #222; position: relative; }
+.msg h1 { color: #fff;  }
+.msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
+.msg a:hover { background: #266400; }
+
+/* //-- yui-grids style overrides -- */
+body { font-family: Georgia; color: #444; }
+#inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; }
+.yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; }
+
+/* //-- header, body, footer -- */
+#hd { margin: 2.5em 0 3em 0; padding-bottom: 1.5em; border-bottom: 1px solid #ccc }
+#hd h2 { text-transform: uppercase; letter-spacing: 2px; }
+#bd, #ft { margin-bottom: 2em; }
+
+/* //-- footer -- */
+#ft { padding: 1em 0 5em 0; font-size: 92%; border-top: 1px solid #ccc; text-align: center; }
+#ft p { margin-bottom: 0; text-align: center;   }
+
+/* //-- core typography and style -- */
+#hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
+h2 { font-size: 152% }
+h3, h4 { font-size: 122%; }
+h1, h2, h3, h4 { color: #333; }
+p { font-size: 100%; line-height: 18px; padding-right: 3em; }
+a { color: #990003 }
+a:hover { text-decoration: none; }
+strong { font-weight: bold; }
+li { line-height: 24px; border-bottom: 1px solid #ccc; }
+p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
+p.enlarge span { color: #000 }
+.contact-info { margin-top: 7px; }
+.first h2 { font-style: italic; }
+.last { border-bottom: 0 }
+
+
+/* //-- section styles -- */
+
+a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
+a#pdf:hover { background: #222; }
+
+.job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
+.job h4 { position: absolute; top: 0.35em; right: 0 }
+.job p { margin: 0.75em 0 3em 0; }
+
+.last { border: none; }
+.skills-list {  }
+.skills-list ul { margin: 0; }
+.skills-list li { margin: 3px 0; padding: 3px 0; }
+.skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
+.talent { width: 32%; float: left }
+.talent h2 { margin-bottom: 6px; }
+
+#srt-ttab { margin-bottom: 100px; text-align: center;  }
+#srt-ttab img.last { margin-top: 20px }
+
+/* --// override to force 1/8th width grids -- */
+.yui-gf .yui-u{width:80.2%;}
+.yui-gf div.first{width:12.3%;}
+
+
+
+	</style>
+	<title>Jonathan Doe | Web Designer, Director | name@yourdomain.com</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" /> 
+	<link rel="stylesheet" type="text/css" href="resume.css" media="all" />
+
 </head>
 <body>
-<div id="wrapper">
-<div id="row_1" class="clearfix row">
-<div class="name_box">
-<img src="img/logo.png" alt="logo" class="logo" />
-<h1 class="name">CARL JOHNSON</h1>
-<h2 class="title">GRAPHIC DESIGNER and WEB PROGRAMER</h2>
-</div><!--name_box-->
-<div class="note_box">
-<span class="icon personal_details_icon"></span>
-<h2>PERSONAL DETAILS</h2>
-<ul class="personal_list">
-<li><span>NATIONALITY</span><p>American</p></li>
-<li><span>LOCATION</span><p>Florida</p></li>
-<li><span>BIRTHDAY</span><p>8 March 1985 (26)</p></li>
-<li><span>EDUCATION</span><p>Major in Graphic Design at UCLA</p></li>
-<li><span>EXPERIENCE</span><p>6 Years</p></li>
-<li><span>AVAILABILITY</span><p>Part time</p></li>
-</ul><!--personal_list-->
-</div><!--note_box-->
-<div class="note_box last">
-<span class="icon personal_contact_icon"></span>
-<h2>GET IN TOUCH</h2>
-<ul class="contact_list">
-<li class="phone_list"><span>PHONE</span><p>+00 012 3456 7984</p></li>
-<li class="email_list"><span>EMAIL</span><p><span class="mailme">carljohnson at mail dot com</span></p></li>
-<li class="website_list"><span>WEBSITE</span><p><a href="#">www.mywebsite.com</a></p></li>
-<li class="facebook_list"><span>FACEBOOK</span><p><a href="#">facebook.com/myname</a></p></li>
-</ul><!--contact_list-->
-</div><!--note_box-->
-</div><!--row_1-->
-<div id="row_2" class="clearfix row">
-<div class="note_box">
-<span class="icon education_details_icon"></span>
-<h2>EDUCATION</h2>
-<ul class="history_list">
-<li><span>HIGH SCHOOL  2003</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.<br />
-May 2004, GPA 1.5</p></li>
-<li><span>UNIVERSITY  2005</span><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.<br />
-May 2005, GPA 1.5</p></li>
-<li><span>OTHERS  2005</span><p>Lorem Ipsum Dolor sit Amet,Consectetur.<br />
-May 2006, GPA 1.5</p></li>
-</ul><!--history_list-->
-</div><!--note_box-->
-<div class="note_box">
-<span class="icon employment_details_icon"></span>
-<h2>EMPLOYMENT HISTORY</h2>
-<ul class="history_list">
-<li><span>GRAPHIC DESIGNER  2005 - 2007</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p></li>
-<li><span>CREATIVE DIRECTOR 2007- 2009</span><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Nisi ut aliquip ex ea commodo consequat.</p></li>
-</ul><!--history_list-->
-</div><!--note_box-->
-<div class="note_box last">
-<span class="icon employment_details_icon"></span>
-<ul class="history_list bis">
-<li><p> Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p></li>
-<li><span>ACCOUNT MANAGER 2009- 2011</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p></li>
-</ul><!--history_list-->
-</div><!--row_2-->
-</div><!--note_box-->
-<div id="row_3" class="clearfix row">
-<div class="note_box">
-<span class="icon skills_icon"></span>
-<h2>PROFESIONAL SKILLS</h2>
-<img src="img/line-skills.png" alt="bar level" class="bar_level" />
-<ul class="skills_list">
-<li><span>Graphic design</span>
-<ul class='bar-rating'>
-<li class='current-rating six-bars-half'></li>
-</ul></li>
-<li><span>Web design</span>
-<ul class='bar-rating'>
-<li class='current-rating five-bars-half'></li>
-</ul></li>
-<li><span>SEO</span>
-<ul class='bar-rating'>
-<li class='current-rating five-bars'></li>
-</ul></li>
-</ul><!--skills_list-->
-<span class="separator"></span>
-<ul class="skills_list">
-<li><span>Photoshop</span>
-<ul class='bar-rating'>
-<li class='current-rating seven-bars'></li>
-</ul></li>
-<li><span>Illustrator</span>
-<ul class='bar-rating'>
-<li class='current-rating six-bars-half'></li>
-</ul></li>
-<li><span>InDesign</span>
-<ul class='bar-rating'>
-<li class='current-rating five-bars-half'></li>
-</ul></li>
-<li><span>Flash</span>
-<ul class='bar-rating'>
-<li class='current-rating five-bars'></li>
-</ul></li>
-<li><span>Dreamweaver</span>
-<ul class='bar-rating'>
-<li class='current-rating six-bars-half'></li>
-</ul></li>
-<li><span>CSS/HTML</span>
-<ul class='bar-rating'>
-<li class='current-rating five-bars-half'></li>
-</ul></li>
-</ul><!--skills_list-->
-</div><!--note_box-->
-<div class="note_box">
-<span class="icon skills_icon"></span>
-<h2>PERSONAL SKILLS</h2>
-<img src="img/line-skills.png" alt="bar level" class="bar_level" />
-<ul class="skills_list">
-<li><span>Social Commitment</span>
-<ul class='bar-rating'>
-<li class='current-rating six-bars-half'></li>
-</ul></li>
-<li><span>Organization</span>
-<ul class='bar-rating'>
-<li class='current-rating five-bars-half'></li>
-</ul></li>
-<li><span>Creativity</span>
-<ul class='bar-rating'>
-<li class='current-rating five-bars'></li>
-</ul></li>
-<li><span>Communication</span>
-<ul class='bar-rating'>
-<li class='current-rating seven-bars'></li>
-</ul></li>
-<li><span>Teamwork</span>
-<ul class='bar-rating'>
-<li class='current-rating six-bars-half'></li>
-</ul></li>
-</ul><!--skills_list-->
-</div><!--note_box-->
-<div class="note_box last">
-<span class="icon portfolio_icon"></span>
-<h2>PORTFOLIO</h2>
-<div class="portfolio_items clearfix">
-<ul>
-<li><a href="img/portfolio/001-creative-business-card-template-vol-1.jpg" title="Creative Business Card"><img src="img/portfolio/thumb-001-creative-business-card-template-vol-1.jpg" alt="Creative Business Card" class="thumb_portfolio" /><span></span></a></li>
-<li><a href="img/portfolio/001-tri-fold-corporate-brochure-template-vol-2.jpg" title="Corporate Brochure Tri-Fold"><img src="img/portfolio/thumb-001-tri-fold-corporate-brochure-template-vol-2.jpg" alt="Corporate Brochure Tri-Fold" class="thumb_portfolio" /><span></span></a></li>
-<li class="last"><a href="img/portfolio/001-tecno-party-flyer-template-vol-1.jpg" title="Party Flyer"><img src="img/portfolio/thumb-001-tecno-party-flyer-template-vol-1.jpg" alt="Party Flyer" class="thumb_portfolio" /><span></span></a></li>
-<li><a href="img/portfolio/001-web-ribbon-sale-label-vol-1.jpg" title="Web Ribbons"><img src="img/portfolio/thumb-001-web-ribbon-sale-label-vol-1.jpg" alt="Web Ribbons" class="thumb_portfolio" /><span></span></a></li>
-<li><a href="img/portfolio/001_psd-retro-badges-style-vintage-label.jpg" title="Vintage Badges"><img src="img/portfolio/thumb-001_psd-retro-badges-style-vintage-label.jpg" alt="Vintage Badges" class="thumb_portfolio" /><span></span></a></li>
-<li class="last"><a href="img/portfolio/001-dark-social-icons-set.jpg" title="Dark Social Icons"><img src="img/portfolio/thumb-001-dark-social-icons-set.jpg" alt="Dark Social Icons" class="thumb_portfolio" /><span></span></a></li>
-<li><a href="img/portfolio/001_payment_pay_method_icons_credit_card_debit.jpg" title="E-commerce Icons"><img src="img/portfolio/thumb-001_payment_pay_method_icons_credit_card_debit.jpg" alt="E-commerce Icons" class="thumb_portfolio" /><span></span></a></li>
-<li><a href="img/portfolio/001-soda-can-psd-mockup-template.jpg" title="Soda Can"><img src="img/portfolio/thumb-001-soda-can-psd-mockup-template.jpg" alt="Soda Can" class="thumb_portfolio" /><span></span></a></li>
-<li class="last"><a href="img/portfolio/001_psd-chocolate_text_effect_type_font_caracter_caligraphic_3d.jpg" title="Chocolate Text Effect"><img src="img/portfolio/thumb-001_psd-chocolate_text_effect_type_font_caracter_caligraphic_3d.jpg" alt="Chocolate Text Effect" class="thumb_portfolio" /><span></span></a></li>
-</ul>
-</div><!--portfolio_items-->
-</div><!--note_box-->
-</div><!--row_3-->
-<div id="row_4" class="clearfix row">
-<div class="note_box contact_box">
-<span class="icon contact_icon"></span>
-<h2>EMAIL<br /> ME</h2>
- <div id="note"></div>
- <div id="formwrapper">
-<form class="form" action="contact.php" method="post">
-	<p class="name">
-		<input type="text" name="name"  id="name" placeholder="Name*" class="inputfield" />
-	</p>
-	<p class="email">
-		<input type="text" name="email"  id="email" placeholder="Email*" class="inputfield"  />
-	</p>
-	<p class="phone">
-		<input type="text" name="phone"  id="phone" placeholder="Phone" class="inputfield"  />
-	</p>
-	<p class="message">
-		<textarea name="message" placeholder="Comment"></textarea>
-	</p>
-	<p class="submit">
-		<input type="submit" class="submit" id="submit" value="Send" />
-	</p>
-</form>
-</div><!--formwrapper-->
-</div><!--note_box-->
-</div><!--row_4-->
-<div id="sidebar">
-<div class="pic_holder">
-<a href="img/photo-2.png" title="Carl Johnson and Friends"><img src="img/photo-1.png" alt="carl johnson pic" class="profile_pic" /><span></span></a>
-</div><!--pic_holder-->
-<div id="social_links">
-<ul class="social_list">
-<li class="facebook"><a href="#"><span>Facebook</span></a></li>
-<li class="twitter"><a href="#"><span>Twitter</span></a></li>
-<li class="flickr"><a href="#"><span>Flickr</span></a></li>
-<li class="deviantart"><a href="#"><span>Deviantart</span></a></li>
-</ul>
-<ul class="social_list">
-<li class="download"><a href="#"><span>Download Resume</span></a></li>
-</ul>
-</div><!--social_links-->
-</div><!--sidebar-->
-<div id="footer">
-<img src="img/logo-footer.png" alt="logo-footer" class="logo_footer" />
-<h3 class="footer_title">CARL<br />
-JOHNSON<span>graphic designer and web programer</span></h3>
-</div><!--footer-->
-</div><!--wrapper-->
+
+<div id="doc2" class="yui-t7">
+	<div id="inner">
+	
+		<div id="hd">
+			<div class="yui-gc">
+				<div class="yui-u first">
+					<h1>Jonathan Doe</h1>
+					<h2>Web Designer, Director</h2>
+				</div>
+
+				<div class="yui-u">
+					<div class="contact-info">
+						<h3><a id="pdf" href="#">Download PDF</a></h3>
+						<h3><a href="mailto:name@yourdomain.com">name@yourdomain.com</a></h3>
+						<h3>(313) - 867-5309</h3>
+					</div><!--// .contact-info -->
+				</div>
+			</div><!--// .yui-gc -->
+		</div><!--// hd -->
+
+		<div id="bd">
+			<div id="yui-main">
+				<div class="yui-b">
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Profile</h2>
+						</div>
+						<div class="yui-u">
+							<p class="enlarge">
+								Progressively evolve cross-platform ideas before impactful infomediaries. Energistically visualize tactical initiatives before cross-media catalysts for change. 
+							</p>
+						</div>
+					</div><!--// .yui-gf -->
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Skills</h2>
+						</div>
+						<div class="yui-u">
+
+								<div class="talent">
+									<h2>Web Design</h2>
+									<p>Assertively exploit wireless initiatives rather than synergistic core competencies.	</p>
+								</div>
+
+								<div class="talent">
+									<h2>Interface Design</h2>
+									<p>Credibly streamline mission-critical value with multifunctional functionalities.	 </p>
+								</div>
+
+								<div class="talent">
+									<h2>Project Direction</h2>
+									<p>Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.</p>
+								</div>
+						</div>
+					</div><!--// .yui-gf -->
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Technical</h2>
+						</div>
+						<div class="yui-u">
+							<ul class="talent">
+								<li>XHTML</li>
+								<li>CSS</li>
+								<li class="last">Javascript</li>
+							</ul>
+
+							<ul class="talent">
+								<li>Jquery</li>
+								<li>PHP</li>
+								<li class="last">CVS / Subversion</li>
+							</ul>
+
+							<ul class="talent">
+								<li>OS X</li>
+								<li>Windows XP/Vista</li>
+								<li class="last">Linux</li>
+							</ul>
+						</div>
+					</div><!--// .yui-gf-->
+
+					<div class="yui-gf">
+	
+						<div class="yui-u first">
+							<h2>Experience</h2>
+						</div><!--// .yui-u -->
+
+						<div class="yui-u">
+
+							<div class="job">
+								<h2>Facebook</h2>
+								<h3>Senior Interface Designer</h3>
+								<h4>2005-2007</h4>
+								<p>Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence. </p>
+							</div>
+
+							<div class="job">
+								<h2>Apple Inc.</h2>
+								<h3>Senior Interface Designer</h3>
+								<h4>2005-2007</h4>
+								<p>Progressively reconceptualize multifunctional "outside the box" thinking through inexpensive methods of empowerment. Compellingly morph extensive niche markets with mission-critical ideas. Phosfluorescently deliver bricks-and-clicks strategic theme areas rather than scalable benefits. </p>
+							</div>
+
+							<div class="job">
+								<h2>Microsoft</h2>
+								<h3>Principal and Creative Lead</h3>
+								<h4>2004-2005</h4>
+								<p>Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials. </p>
+							</div>
+
+
+							<div class="job last">
+								<h2>International Business Machines (IBM)</h2>
+								<h3>Lead Web Designer</h3>
+								<h4>2001-2004</h4>
+								<p>Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.</p>
+							</div>
+
+						</div><!--// .yui-u -->
+					</div><!--// .yui-gf -->
+
+
+					<div class="yui-gf last">
+						<div class="yui-u first">
+							<h2>Education</h2>
+						</div>
+						<div class="yui-u">
+							<h2>Indiana University - Bloomington, Indiana</h2>
+							<h3>Dual Major, Economics and English &mdash; <strong>4.0 GPA</strong> </h3>
+						</div>
+					</div><!--// .yui-gf -->
+
+
+				</div><!--// .yui-b -->
+			</div><!--// yui-main -->
+		</div><!--// bd -->
+
+		<div id="ft">
+			<p>Jonathan Doe &mdash; <a href="mailto:name@yourdomain.com">name@yourdomain.com</a> &mdash; (313) - 867-5309</p>
+		</div><!--// footer -->
+
+	</div><!-- // inner -->
+
+
+</div><!--// doc -->
+
+
 </body>
 </html>
+
