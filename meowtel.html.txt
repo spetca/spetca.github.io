@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+   IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+   
+   
+    
+    </style>
+</head>
+
+<body>
+<IMG class="displayed" src="IG 2.001.png" alt=""Meowtel">
+</body>
+</html>
