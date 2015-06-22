@@ -1,23 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <style type="text/css">
-   
-body {
-    width: 100%;
-    height: 100%;
+<style>
+* {
+  padding: 0;
+  margin: 0;
 }
-
-   
-   
-    
-    </style>
+.fit {
+  max-width: 100%;
+  max-height: 100%;
+}
+.center {
+  display: block;
+  margin: auto;
+}
+</style>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" language="JavaScript">
+function set_body_height()
+{
+    var wh = $(window).height();
+    $('body').attr('style', 'height:' + wh + 'px;');
+}
+$(document).ready(function() {
+    set_body_height();
+    $(window).bind('resize', function() { set_body_height(); });
+});
+</script>
 </head>
-
 <body>
-	<div style="position:fixed; height: 100%; width: 100%; top:0;left 0;">
-  		 <h1><img src="IMG_7535.jpg" alt=""Meowtel"></h1>
-	</div>
+<img id="the_pic" class="center fit" src="IMG_7535.jpg" >    
 </body>
 </html>
