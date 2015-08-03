@@ -1,1 +1,35 @@
 
+<head>
+<style type="text/css">
+body {
+    width: 100%;
+    height: 100%;
+}
+div {
+    position:absolute; height:100%; width:100%;
+    display: table;
+}
+h1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+}
+</style>
+</head>
+<body>
+
+    <div>
+        <h1><u>Oceanside Report: 8/3/15
+         
+
+	    </u><br><br>
+        big inshore holes barring the session 4sure.   <br><br><br>
+          
+         
+          
+            
+        </h1>
+        
+      
+    </div>
+</body>
